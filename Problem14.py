@@ -1,24 +1,42 @@
-import random
+input("Think of a number in range 1-100 and press amy key when you are ready")
+min = 1
+max = 100
 
-print("Hello friend,Please think about a number between 1 and 100")
+while(True):
+    computerGuess= (max-min)//2 + min
+    userAnswer = input("Is this your number?"+str(computerGuess)+"\n please type Y if I guessed right, H if the number is too high, L if the number is too low")
 
-compGuess = random.randint(1,100)
-
-print("Is this your number? -",compGuess)
-
-userAnswer= input("too high or too low?")
-
-while (True):
-    if(userAnswer == "too high"):
-        compGuess = int(compGuess//2)
-        print("Is this your number? -",compGuess)
-    elif (userAnswer == "too low"):
-        compGuess = compGuess + int((100-compGuess)//2) 
-        print("Is this your number? -",compGuess)
-    else:
+    if(userAnswer == "Y"):
+        print("User you'r the losser")
         break
+    elif (userAnswer == "H"):
+        max = computerGuess
+        print(min,max)
+    elif (userAnswer == "L"):
+        min = computerGuess
+        print(min,max)
+    else:
+        print("Please input a valid answer mentioned above")
 
-print("I am the winner!!!")
+print("Bye")
+
+
+
+
+
+
+
+
+
+
+ 
+   
+
+
+    
+
+
+
 
     
 
