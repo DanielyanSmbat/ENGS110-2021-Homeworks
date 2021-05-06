@@ -1,0 +1,22 @@
+#include <iostream>
+
+
+
+
+void add_element(int a,struct element){
+	element->current[10] *= 2;
+	printf("Here is the amount of space in element: %f",current[10])
+}
+
+int main(){
+	struct element {
+		int* address=0;
+		int current[10];
+		int value[10];
+	};
+	int x=0;
+	add_element(x);
+	return 0;
+}
+
+

@@ -1,0 +1,16 @@
+{
+        "books" : [
+                {
+                        "title" : "My title",
+                        "author" : "",
+                        "number_of_pages": 59,
+                        "publishing_year" : 196
+                },
+                {
+                        "title" : "Another title",
+                        "author" : "",
+                        "number_of_pages": 59,
+                        "publishing_year" : 1965
+                }
+        ]
+}
